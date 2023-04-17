@@ -8,7 +8,7 @@ function choice(items) {
 
   for (let i = 0; i < handSize; i++) {
     const idx = Math.floor(Math.random() * items.length);
-    hand1.push(items.splice(idx, 1));
+    hand1.push(items.splice(idx, 1)[0]);
   }
 
   hand2 = items.slice();

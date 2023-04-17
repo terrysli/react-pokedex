@@ -6,9 +6,10 @@ import Pokecard from "./Pokecard";
 function Pokedex(props) {
   return (
     <div>
-    {props.pokemons.map(pokemon =>
-      <Pokecard pokemon={pokemon} />)}
-    <p>{props.isWinner ? "THIS HAND WINS!" : ""}</p>
+      {props.pokemons.map(pokemon =>
+        <Pokecard pokemon={pokemon} />)}
+      <p>Total Exp: {props.totalExp}</p>
+      <b><p>{props.isWinner ? "THIS HAND WINS!" : ""}</p></b>
     </div>
   );
 }
