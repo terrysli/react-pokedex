@@ -16,4 +16,17 @@ function choice(items) {
   return { hand1, hand2 };
 }
 
-export default choice;
+
+/**
+ * Return total exp of all Pokemons in hand
+ */
+function calcTotalExp(hand) {
+  let totalExp = 0;
+  for(const pokemon of hand) {
+    totalExp += pokemon.base_experience;
+  }
+  return totalExp;
+}
+
+
+export {choice, calcTotalExp};
