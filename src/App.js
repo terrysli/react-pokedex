@@ -19,7 +19,7 @@ const pokemonData = [
 function App() {
   return (
     <div className="App">
-      <Pokedex pokemon={pokemonData}/>
+      <Pokedex pokemons={pokemonData}/>
     </div>
   );
 }
