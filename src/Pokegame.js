@@ -1,0 +1,1 @@
+import Pokecard from "./Pokecard";
