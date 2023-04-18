@@ -1,5 +1,6 @@
 import './App.css';
 import Pokegame from "./Pokegame";
+import Hand from "./Hand";
 
 const pokemonData = [
   {id: 4,   name: 'Charmander', type: 'fire',     base_experience: 62},
@@ -20,6 +21,7 @@ function App() {
   return (
     <div className="App">
       <Pokegame pokemons={pokemonData}/>
+      <Hand />
     </div>
   );
 }
